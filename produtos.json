@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "nome": "carro",
+        "preco": 120
+    },
+    {
+        "id": 2,
+        "nome": "moto",
+        "preco": 7800
+    },
+    {
+        "id": 3,
+        "nome": "Bicicleta",
+        "preco": 700
+    }
+]

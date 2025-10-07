@@ -1,0 +1,367 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+
+    * {
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .corpoInicial {
+        background: linear-gradient(135deg, #ffffff 0%, #B0E0E6 100%);
+        min-height: 100vh;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 32px;
+        font-weight: bold;
+
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        list-style-type: none;
+        margin: 10px 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #2F4F4F;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .produtos-index {
+        margin-bottom: 20px;
+        border: 2px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #F0F8FF;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        align-self: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .vendas-index {
+        margin-bottom: 20px;
+        border: 2px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #F0F8FF;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        align-self: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .clientes-index {
+        margin-bottom: 20px;
+        border: 2px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #F0F8FF;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        align-self: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .funcionarios-index {
+        margin-bottom: 20px;
+        border: 2px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #F0F8FF;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        align-self: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        font-weight: bold;
+        
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 40px;
+        background-color: #B0E0E6;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ccc;
+        align-self: center;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        width: 100%;
+        max-width: 600px;
+    }
+
+/* cadastro do produto */
+#body2{
+    background: linear-gradient(135deg, #ffffff 0%, #B0E0E6 100%);
+    color: #333;
+}
+
+.head1{
+    text-align: center;
+    color: #333;
+}
+
+#div1{
+    background-color: #B0E0E6;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+#div2{
+    background-color: aliceblue;
+    width: 350px;
+    margin: 130px;
+    border-radius: 15px;
+    border: 1px solid color black;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    padding: 15px;
+    margin-left: 570px;
+}
+
+#div3{
+    background-color: #B0E0E6;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    margin-top: 100px;
+}
+
+#input{
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid color black;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+#button{
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid;
+}
+
+#voltar{
+    width: 100px;
+    border: 1px solid color black;
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    margin: 50px;
+    margin-left: 670px;
+}
+
+/*lista de produtos*/
+.produtosCadastrados {
+        text-align: center;
+        margin-bottom: 40px;
+        background-color: #B0E0E6;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ccc;
+        align-self: center;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        width: 100%;
+        max-width: 600px;
+}
+#voltar3{
+    height: 50px;
+    width: 300px;
+    border: 1px solid color black;
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    margin-left: 50px;
+    text-align: center;
+}
+.tableProdutos{
+    width: 500px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-collapse: collapse;
+    margin-left: 30px;
+    padding: 50px;
+    border: 2px solid rgb(187, 187, 187);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+.corpoFuncionario{
+        background: linear-gradient(100deg, #ffffff 0%, #B0E0E6 100%);
+    }
+
+    .containerFuncionario{
+        margin-top: 40px;
+        border: 3px solid black;
+        text-align: center;
+        padding: 20px;
+        margin-left: 500px;
+        margin-right: 500px;
+        border-radius: 20px;
+        background-color: #F0F8FF;
+    }
+    .centra{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .tabela {
+        background-color: #ffffff;
+        border: solid black 2px;
+       
+    }
+
+    .containerCadastrar{
+        border: 2px solid black;
+        text-decoration: none;
+        padding: 5px;
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 10px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        margin-left: 600px;
+        margin-right: 600px;
+    }
+    .containerVoltar{
+        border: 2px solid black;
+        text-decoration: none;
+        padding: 5px;
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 10px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        margin-left: 600px;
+        margin-right: 600px;
+    }
+    #body3{
+    background: linear-gradient(135deg, #ffffff 0%, #B0E0E6 100%);
+    color: #333;
+}
+
+.head2{
+    text-align: center;
+    color: #333;
+}
+
+#div4{
+    background-color: #B0E0E6;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+#div5{
+    background-color: aliceblue;
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    border: 1px solid color black;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    padding: 15px;
+    margin-left: 655px;
+}
+
+#div6{
+    background-color: #B0E0E6;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    margin-top: 50px;
+}
+
+#input{
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid color black;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+#button{
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid;
+}
+
+.voltar2{
+    text-align: center;
+    width: 175px;
+    border: 1px solid color black;
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    margin: 20px;
+    margin-left: 670px;
+}
+#sectionVenda{
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    background-color: #B0E0E6;
+}
+.h1Venda{
+    background-color: #B0E0E6;
+}
+#mainform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.salvar{
+    border: solid black 2px;
+    text-decoration: none;
+    }
+.finalvenda{
+    border: solid black 3px;
+    display: flex;
+    justify-content: center;
+}

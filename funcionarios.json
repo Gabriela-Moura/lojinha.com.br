@@ -1,0 +1,16 @@
+[
+    {
+        "idFuncionario": 2,
+        "nome": "Bruna Moraes de Souza",
+        "cpf": "490.872.234-67",
+        "cargo": "Gerente",
+        "salario": 10900
+    },
+    {
+        "idFuncionario": 3,
+        "nome": "Maria Cristina da Silva Souza",
+        "cpf": "670.534.434.87",
+        "cargo": "Vendedor",
+        "salario": 2350
+    }
+]
