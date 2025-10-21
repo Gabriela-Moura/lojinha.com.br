@@ -7,10 +7,10 @@
         "salario": 10900
     },
     {
-        "idFuncionario": 3,
-        "nome": "Maria Cristina da Silva Souza",
-        "cpf": "670.534.434.87",
-        "cargo": "Vendedor",
-        "salario": 2350
+        "idFuncionario": 4,
+        "nome": "Gabriela Moura",
+        "cpf": "300.401.507-02",
+        "cargo": "Gerente",
+        "salario": 7000
     }
 ]

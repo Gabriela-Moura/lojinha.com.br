@@ -1,17 +1,17 @@
 [
     {
-        "id": 1,
-        "nome": "carro",
-        "preco": 120
-    },
-    {
         "id": 2,
         "nome": "moto",
         "preco": 7800
     },
     {
-        "id": 3,
-        "nome": "Bicicleta",
-        "preco": 700
+        "id": 4,
+        "nome": "Carro",
+        "preco": 19000
+    },
+    {
+        "id": 5,
+        "nome": "Helicoptero",
+        "preco": 1000000000
     }
 ]

@@ -1,7 +1,5 @@
-<?php  
-//Yago 
-
-//Salvar_vendas.php
+<?php
+//Yago
 require_once "Produto.php";
 require_once "Venda.php";
 
@@ -10,55 +8,55 @@ $clientesFile = "clientes.json";
 $vendasFile = "vendas.json";
 $produtosFile = "produtos.json";
 
-//Carregar arquivos
+// Carregar arquivos
 $clientes = json_decode(file_get_contents($clientesFile), true);
 $produtosJSON = json_decode(file_get_contents($produtosFile), true);
 
 if (!file_exists($vendasFile)) {
-    file_put_contents($vendasFile, "[]");
+file_put_contents($vendasFile, "[]");
 
 }
 $vendasJSON = json_decode(file_get_contents($vendasFile), true);
 
-//Dados do formulário
+// Dados do formulário
 $idPessoa = $_POST['idPessoa'];
 $produtosSelecionados = $_POST['produtos'] ?? [];
 
-
-//Busca cliente
+// Busca cliente
 $clienteIndex = null;
-
-
 foreach ($clientes as $i => $c) {
-    if ($c['idPessoa'] == $idPessoa) {
-        $clienteIndex = $i;
-        break;
-    }
- }
-        
-if ($clienteIndex === null) die("❌ CLiente não encontrado");
+if ($c['idPessoa'] == $idPessoa) {
+$clienteIndex = $i;
+break;
+}
+}	
+if ($clienteIndex === null) die(" Cliente não encontrado.");
 
-//Cria a venda
+// Cria venda
 $venda = new Venda(count($vendasJSON) + 1, $idPessoa);
 
-//Adiciona produtos
+// Adiciona produtos
 foreach ($produtosSelecionados as $pid) {
-    foreach($produtosJSON as $p) {
-        if ($p['id'] == $pid) {
-         $produto = new Produto($p['id'], $p['nome'], $p['preco']);
-         $venda->adicionarItem($produto);
-        }
-    }
+foreach ($produtosJSON as $p) {
+if ($p['id'] == $pid) {
+$produto = new Produto($p['id'], $p['nome'], $p['preco']);
+$venda->adicionarItem($produto);
+}
+}
 
 }
 
 // Adiciona a venda no JSON
 $vendasJSON[] = $venda->toArray();
-file_put_contents($vendasFile, json_encode($vendasJSON, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+file_put_contents($vendasFile, json_encode($vendasJSON, JSON_PRETTY_PRINT |
+JSON_UNESCAPED_UNICODE));
 
-//Redireciona para o extrato
+// Atualiza saldo do cliente
+$clientes[$clienteIndex]['saldo'] -= $venda->getTotal();
+file_put_contents($clientesFile, json_encode($clientes, JSON_PRETTY_PRINT |
+JSON_UNESCAPED_UNICODE));
+
+// Redireciona para extrato
 header("Location: extrato.php?idPessoa=$idPessoa");
 exit;
-
-
-
+?>

@@ -1,6 +1,7 @@
 <?php
 require_once "Venda.php";
 require_once "Produto.php";
+echo"<link rel='stylesheet' href='estilo.css'>";
 
 $clientes = json_decode(file_get_contents("clientes.json"), true);
 $vendasJSON = json_decode(file_get_contents("vendas.json"), true);
@@ -21,7 +22,7 @@ break;
     <meta charset="UTF-8">
     <title>Extrato do Cliente</title>
 </head>
-<body>
+<body class='corpoInicial'>
     <?php if ($cliente): ?>
         <h1>Extrato - <?= $cliente['nome'] ?></h1>
         <p><b>CPF:</b> <?= $cliente['cpf'] ?></p>
